@@ -112,7 +112,7 @@ export default function Checkout() {
                 <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
                   <WhopCheckoutEmbed
                     ref={ref}
-                    planId="plan_QOk7Ldw02rMJH"
+                    planId="plan_8SCfdLGBc9ziR"
                     theme="light"
                     fallback={<LoadingScreen />}
                   />
