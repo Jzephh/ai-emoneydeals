@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #7a3cff;
+  --color-brand-purple-light: #9d6bff;
+  --blur-xs: 2px;
+  --font-family-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-family-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  color: #1f2937;
+  overflow-x: hidden;
+  font-family: var(--font-family-sans);
+}
+
+/* Ensure font variables are available */
+:root {
+  --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+.page-bg {
+  position: relative;
+  min-height: 100dvh;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+/* Removed gradient backgrounds for clean light mode */
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: var(--shadow-gray);
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--color-brand-purple);
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-gray);
+}
+
+.btn:hover {
+  background: #7a3cff;
+  box-shadow: var(--shadow-gray-lg);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Professional Typography */
+.font-display {
+  font-family: var(--font-family-display), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.font-heading {
+  font-family: var(--font-family-display), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.font-body {
+  font-family: var(--font-family-sans), 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
