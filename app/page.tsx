@@ -186,7 +186,7 @@ export default function Checkout() {
                 </ul>
               </div>
             </div>
-            <div className="mt-4 flex items-center justify-center gap-5 text-gray-500 pb-4">
+            <div className="mt-4 flex items-center justify-center gap-5 text-gray-500">
                     <a href="https://x.com/eMoney_HQ" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="hover:text-gray-700">
                         <FaXTwitter className="text-xl" />
                     </a>
@@ -207,7 +207,7 @@ export default function Checkout() {
                     </a>
                 </div>
 
-            <div className="pt-6 border-t border-gray-200 text-sm text-gray-600 text-center">
+            <div className="pt-6 border-t border-gray-200 text-sm text-gray-600 text-center mt-6">
               © {new Date().getFullYear()} EMONEY Deals. All rights reserved.
             </div>
           </div>
