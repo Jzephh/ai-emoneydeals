@@ -5,6 +5,8 @@ import { useMemo, useState, useEffect } from "react";
 import ReviewsTicker from "@/components/ReviewsTicker";
 import { WhopCheckoutEmbed, useCheckoutEmbedControls } from "@whop/checkout/react";
 import LoadingScreen from "@/components/LoadingScreen";
+import { FaXTwitter, FaInstagram, FaYoutube, FaTiktok, FaFacebook, FaGlobe } from "react-icons/fa6";
+
 import { gaEvent } from "./(lib)/ga";
 
 export default function Checkout() {
@@ -184,6 +186,26 @@ export default function Checkout() {
                 </ul>
               </div>
             </div>
+            <div className="mt-4 flex items-center justify-center gap-5 text-gray-500">
+                    <a href="https://x.com/eMoney_HQ" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="hover:text-gray-700">
+                        <FaXTwitter className="text-xl" />
+                    </a>
+                    <a href="https://instagram.com/nick.hustles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-gray-700">
+                        <FaInstagram className="text-xl" />
+                    </a>
+                    <a href="https://www.youtube.com/@samdebaets767" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-gray-700">
+                        <FaYoutube className="text-xl" />
+                    </a>
+                    <a href="https://tiktok.com/@sam.hustles" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="hover:text-gray-700">
+                        <FaTiktok className="text-xl" />
+                    </a>
+                    <a href="https://facebook.com/people/Emoney-Deals/61554122287343" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-700">
+                        <FaFacebook className="text-xl" />
+                    </a>
+                    <a href="https://www.joinemoney.com/register" target="_blank" rel="noopener noreferrer" aria-label="Join eMoney" className="hover:text-gray-700">
+                        <FaGlobe className="text-xl" />
+                    </a>
+                </div>
 
             <div className="pt-6 border-t border-gray-200 text-sm text-gray-600 text-center">
               © {new Date().getFullYear()} EMONEY Deals. All rights reserved.
